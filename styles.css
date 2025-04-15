@@ -1,0 +1,281 @@
+/* styles.css */
+
+/* Google Font Setup */
+body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    background-color: #121212;
+    color: #d3d3d3;
+    line-height: 1.6;
+
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); /* subtle texture */
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: #1d3557;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    max-height: 80px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#book-details {
+    padding: 60px 0;
+}
+
+.book-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.book-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.book-image {
+    flex: 1;
+    text-align: center;
+}
+
+.book-cover {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #e63946;
+    box-shadow: 0 0 10px #e63946;
+}
+
+h1, h2 {
+    color: #f1faee;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.5px;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #e63946;
+    color: #fff;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #a4161a;
+}
+
+footer {
+    background-color: #1d3557;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    color: #f1faee;
+}
+/* Container for All Sections */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* About Section */
+#about {
+    padding: 50px 0;
+    background-color: transparent;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-repeat: repeat;
+    background-size: auto;
+    text-align: center;
+    color: #f1faee; /* soft light text for contrast */
+   font-family: 'Playfair Display', serif;
+}
+
+
+#about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+/* Books Section */
+#books {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.book-series {
+    margin-bottom: 50px;
+}
+
+.book-series h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.books {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.book {
+    flex: 1 1 calc(33.33% - 20px); /* Equal width */
+    max-width: 33.33%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.book h4 a {
+    text-decoration: none;
+    color: #4c6b8b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.book h4 a:hover {
+    text-decoration: underline;
+}
+
+/* Newsletter Signup */
+#newsletter {
+    padding: 50px 0;
+    background-color: #121212;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-repeat: repeat;
+    background-size: auto;
+    text-align: center;
+    color: #f1faee;
+}
+
+
+#newsletter form input {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#newsletter form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4c6b8b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newsletter form button:hover {
+    background-color: #39607d;
+}
+
+/* Social Media Links */
+#social-media {
+    padding: 50px 0;
+    background-color: #121212;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-repeat: repeat;
+    background-size: auto;
+    text-align: center;
+    color: #f1faee;
+}
+
+
+#social-media .social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+#social-media .social-media li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#social-media .social-media a {
+    text-decoration: none;
+    color: #4c6b8b;
+    font-size: 20px;
+}
+
+#social-media .social-media a:hover {
+    color: #39607d;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 20px;
+    background-color: #4c6b8b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#back-to-top:hover {
+    background-color: #39607d;
+}
+#newsletter form input,
+#newsletter form button {
+    background-color: #1d1d1d;
+    color: #f1faee;
+    border: 1px solid #444;
+}
+
+#newsletter form button:hover {
+    background-color: #333;
+}
+
+/* Target h2 inside #books */
+#books h2 {
+    color: #1d3557; /* Dark blue for contrast */
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Target h3 inside #books */
+#books h3 {
+    color: #1d3557;
+    font-family: 'Playfair Display', serif;
+}
