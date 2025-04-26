@@ -24,14 +24,18 @@
                 <div class="book-text">
                     <p><strong>Author:</strong> W.K. Gorbet</p>
                     <p><strong>Genre:</strong> Fantasy / Science Fiction</p>
-<p><strong>Inspirations:</strong> First Law, Mistborn, Bloodsworn Saga, YuYu Hakusho, Black Clover</p>
-<p><strong>Themes:</strong> Grief, Sanity</p>
-                    <h2>Detailed Synopsis</h2>
-                    <p>IKARI, first a slave, then a thief, finally accepts that he is alone in the world. But when he sustains a life-threatening injury, he is saved by a kind old man, healing him with the only thing staving off his own illness. Having less than six months before the old man dies, Ikari must journey to the dangerous north to retrieve a magical plant if he hopes to repay the debt; one imbued with the power of the Phoenix—the last living god. Begrudgingly, he allows a determined pacifist to accompany him, representing everything he is not.
+<p><strong>Inspirations:</strong> First Law Trilogy, Mistborn, Bloodsworn Saga, Yu Yu Hakusho, Black Clover, Fullmetal Alchemist</p>
+<p><strong>Broad scope themes:</strong> Self-discovery/Coming of age, Power corrupts, Found family/Hero's Journey</p>
+<p><strong>More specific themes:</strong> Altered responses to grief, psychological toll of violence, relationship of technology and nature
+<p><strong>Echoes of Destruction</strong> is the first installment of the First Matter Saga and W.K.'s debut novel. Complete at just under 92,000 words, Echoes of Destruction is aimed at old and new fantasy readers alike interested in shorter, more fast-paced fantasy novels.</p>
+                    
+<h2>Detailed Synopsis</h2>
+
+<p>IKARI, first a slave, then a thief, finally accepts that he is alone in the world. But when he sustains a life-threatening injury, he is saved by a kind old man, healing him with the only thing staving off his own illness. Having less than six months before the old man dies, Ikari must journey to the dangerous north to retrieve a magical plant if he hopes to repay the debt; one imbued with the power of the Phoenix—the last living god. Begrudgingly, he allows a determined pacifist to accompany him, representing everything he is not.
 
 
 <br><br>Back in Faydria, HIKOSHI, Ikari’s old mentor, is firmly under the thumb of ALPHA, an occult leader of a fractured nation. Dangling the bait of vengeance and the safety of his remaining friends, Alpha sends Hikoshi across the world to find ancient relics of the past, but the scope of his plans are revealed to be much more sinister than Hikoshi imagined.</p>
-                    <a href="https://www.amazon.com" target="_blank" class="buy-button">Buy on Amazon</a>
+                    <a href="https://books2read.com/wkgorbet" target="_blank" class="buy-button">Buy</a>
                 </div>
                 <div class="book-image">
                     <img src="EoDlogo.png" alt="Echoes of Destruction Book Cover" class="book-cover">

@@ -1,5 +1,7 @@
 /* styles.css */
 
+/* ========== Global Styles (Shared) ========== */
+
 /* Google Font Setup */
 body {
     margin: 0;
@@ -7,8 +9,7 @@ body {
     background-color: #121212;
     color: #d3d3d3;
     line-height: 1.6;
-
-    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); /* subtle texture */
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
     background-repeat: repeat;
     background-size: auto;
 }
@@ -21,6 +22,14 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+h1, h2, h3, h4 {
+    color: #f1faee;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.5px;
+}
+
+/* ========== Echoes of Destruction Styles ========== */
 
 .header {
     background-color: #1d3557;
@@ -66,12 +75,6 @@ a:hover {
     box-shadow: 0 0 10px #e63946;
 }
 
-h1, h2 {
-    color: #f1faee;
-    font-family: 'Cormorant Garamond', serif;
-    letter-spacing: 0.5px;
-}
-
 .buy-button {
     display: inline-block;
     background-color: #e63946;
@@ -93,6 +96,9 @@ footer {
     margin-top: 60px;
     color: #f1faee;
 }
+
+/* ========== Index (Homepage) Styles ========== */
+
 /* Container for All Sections */
 .container {
     width: 80%;
@@ -101,42 +107,58 @@ footer {
 
 /* About Section */
 #about {
-    padding: 50px 0;
+    padding: 25px 0;
     background-color: transparent;
     background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
     background-repeat: repeat;
     background-size: auto;
     text-align: center;
-    color: #f1faee; /* soft light text for contrast */
-   font-family: 'Playfair Display', serif;
+    color: #f1faee;
+    font-family: 'Cormorant Garamond', serif;
 }
 
-
 #about h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 36px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+	text-align: center;
 }
 
 #about p {
-    font-size: 18px;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 600px;
 }
+
 
 /* Books Section */
 #books {
     padding: 50px 0;
-    background-color: #ffffff;
+    background-color: transparent;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-repeat: repeat;
+    background-size: auto;
+    color: #f1faee;
 }
+
+/* My Books Heading */
+#books h2 {
+    font-size: 36px; /* Same size as About Me */
+    text-align: center; /* Center align */
+    margin-bottom: 20px;
+}
+
 
 .book-series {
     margin-bottom: 50px;
 }
 
 .book-series h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: left;
 }
 
 .books {
@@ -147,7 +169,7 @@ footer {
 }
 
 .book {
-    flex: 1 1 calc(33.33% - 20px); /* Equal width */
+    flex: 1 1 calc(33.33% - 20px);
     max-width: 33.33%;
     text-align: center;
     margin-bottom: 30px;
@@ -163,9 +185,10 @@ footer {
 
 .book h4 a {
     text-decoration: none;
-    color: #4c6b8b;
+    color: #f1faee;
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .book h4 a:hover {
@@ -175,8 +198,12 @@ footer {
 /* Newsletter Signup */
 #newsletter {
     padding: 50px 0;
-    background-color: #e4f7f7;
+    background-color: transparent;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-repeat: repeat;
+    background-size: auto;
     text-align: center;
+    color: #f1faee;
 }
 
 #newsletter form input {
@@ -199,40 +226,15 @@ footer {
     cursor: pointer;
 }
 
-#newsletter form button:hover {
-    background-color: #39607d;
-}
-
-/* Social Media Links */
+/* Social Media Section */
 #social-media {
     padding: 50px 0;
-    background-color: #121212;
+    background-color: transparent;
     background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
     background-repeat: repeat;
     background-size: auto;
     text-align: center;
     color: #f1faee;
-}
-
-
-#social-media .social-media {
-    list-style-type: none;
-    padding: 0;
-}
-
-#social-media .social-media li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-#social-media .social-media a {
-    text-decoration: none;
-    color: #4c6b8b;
-    font-size: 20px;
-}
-
-#social-media .social-media a:hover {
-    color: #39607d;
 }
 
 /* Back to Top Button */
@@ -252,6 +254,7 @@ footer {
 #back-to-top:hover {
     background-color: #39607d;
 }
+
 #newsletter form input,
 #newsletter form button {
     background-color: #1d1d1d;

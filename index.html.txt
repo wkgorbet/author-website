@@ -20,7 +20,7 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Biomedical scientist by day, lover of mythology, comics, anime, and fantasy by night. <br>Aspiring SFF author with a love for genre-bending stories.</p>
+            <p>While W.K. pursued a career in science, his first love was a good story---novels, comics, video games, anime, mythology, and anything of the like. After pursuing a career in the field of biochemistry and nanomedicine for the last decade or so, W.K. has now finally put pen to paper to write the fantasy stories occupying the far corners of his mind. And while he loves wide, sprawling epics, he also believes there is currently an untapped niche of readers longing for more concise fantasy stories. Thus, The First Matter Saga and the Ankor series were born.</p>
         </div>
     </section>
 
@@ -29,46 +29,41 @@
         <div class="container">
             <h2>My Books</h2>
 
-            <!-- Shadow Threads Saga Section -->
+            <!-- The First Matter Saga Section -->
             <div class="book-series">
-                <h3>Shadow Threads Saga</h3>
+                <h3>The First Matter Saga</h3>
                 <div class="books">
                     <div class="book">
                         <img src="EoDlogo.png" alt="Echoes of Destruction">
                         <h4><a href="echoes-of-destruction.html">Echoes of Destruction</a></h4>
-                        <p>Loading... 90%</p>
+                        <p>DONE! Pre-order now for release on 7/1/2025</p>
                     </div>
                     <div class="book">
-                        <img src="book2.jpg" alt="A Vessel Reborn">
+                        <img src="coming_soon.png" alt="A Vessel Reborn">
                         <h4><a href="a-vessel-reborn.html">A Vessel Reborn</a></h4>
-                        <p>Loading...5%</p>
                     </div>
                     <div class="book">
-                        <img src="book3.jpg" alt="Book 3 Title">
-                        <h4><a href="book3.html">Book 3 Title</a></h4>
-                        <p>Loading...</p>
+                        <img src="placeholder.png" alt="Book 3 Title">
+                        <h4><a href="book3.html">First Matter Book 3</a></h4>
                     </div>
                 </div>
             </div>
 
-            <!-- TBD Series Section -->
+            <!-- Ankor Series Section -->
             <div class="book-series">
-                <h3>TBD Series</h3>
+                <h3>Ankor series</h3>
                 <div class="books">
                     <div class="book">
-                        <img src="book4.jpg" alt="TBD Book 1">
-                        <h4><a href="tbd-book1.html">TBD Book 1</a></h4>
-                        <p>Loading...5%</p>
+                        <img src="placeholder.png" alt="Ankor Book 1">
+                        <h4><a href="tbd-book1.html">The Wind Cutter</a></h4>
                     </div>
                     <div class="book">
-                        <img src="book5.jpg" alt="TBD Book 2">
-                        <h4><a href="tbd-book2.html">TBD Book 2</a></h4>
-                        <p>Loading...</p>
+                        <img src="placeholder.png" alt="Ankor Book 2">
+                        <h4><a href="tbd-book2.html">Ankor Book 2</a></h4>
                     </div>
                     <div class="book">
-                        <img src="book6.jpg" alt="TBD Book 3">
-                        <h4><a href="tbd-book3.html">TBD Book 3</a></h4>
-                        <p>Loading...</p>
+                        <img src="placeholder.png" alt="Ankor Book 3">
+                        <h4><a href="tbd-book3.html">Ankor Book 3</a></h4>
                     </div>
                 </div>
             </div>
