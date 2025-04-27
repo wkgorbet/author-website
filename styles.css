@@ -255,13 +255,26 @@ footer {
     background-color: #39607d;
 }
 
-#newsletter form input,
-#newsletter form button {
-    background-color: #1d1d1d;
-    color: #f1faee;
-    border: 1px solid #444;
+/* Remove bullets and styling the social media list */
+ul.social-media {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-#newsletter form button:hover {
-    background-color: #333;
+/* Style the list items */
+ul.social-media li {
+    display: inline-block;
+    margin-right: 10px; /* Adds space between icons */
 }
+
+/* Style the icons (images inside links) */
+ul.social-media li a img {
+    width: 30px;  /* Set width of the icon */
+    height: 30px; /* Set height of the icon */
+    transition: transform 0.3s ease; /* Adds hover effect */
+}
+
+ul.social-media li a img:hover {
+    transform: scale(1.2);  /* Scales up the icon when hovered */
+}
+

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support The Work</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Additional Donation Page Styles */
+    .donation-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(18, 18, 18, 0.9);
+      border-radius: 12px;
+    }
+    .donation-page h1 {
+      font-family: 'Cormorant Garamond', serif;
+      color: #f1faee;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .donation-page p {
+      color: #d3d3d3;
+      font-family: 'Lora', serif;
+      margin-bottom: 40px;
+    }
+    .goal-container {
+      margin-bottom: 40px;
+      padding: 20px;
+      border: 2px solid #4c6b8b;
+      border-radius: 10px;
+      background: #1d1d1d;
+      box-shadow: 0 0 10px rgba(230, 57, 70, 0.4);
+    }
+    .goal-title {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #f1faee;
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .progress-bar {
+      background: #333;
+      width: 100%;
+      height: 25px;
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 10px 0;
+      border: 1px solid #444;
+    }
+    .progress {
+      background: linear-gradient(to right, #e63946, #a4161a);
+      height: 100%;
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+    .goal-status {
+      font-size: 16px;
+      margin-top: 5px;
+      color: #d3d3d3;
+    }
+    .donate-button {
+      margin-top: 20px;
+      padding: 10px 30px;
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: 'Lora', serif;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .donate-button:hover {
+      background: #a4161a;
+    }
+
+    /* Thank you Modal */
+    .thank-you-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(18, 18, 18, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 9999;
+    }
+    .thank-you-modal.active {
+      visibility: visible;
+      opacity: 1;
+    }
+    .thank-you-content {
+      background: #1d3557;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      color: #f1faee;
+      font-family: 'Cormorant Garamond', serif;
+      max-width: 400px;
+    }
+    .thank-you-content h2 {
+      margin-bottom: 20px;
+    }
+    .thank-you-content button {
+      background: #e63946;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .thank-you-content button:hover {
+      background: #a4161a;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="donation-page">
+    <h1>Support The Work!</h1>
+    <p>Choose a project you'd like to help fund (links not yet active; will be in future...):</p>
+
+    <div id="donation-goals">
+      <div class="goal-container" data-goal-id="editor" data-target="300">
+        <div class="goal-title">Where's the map!?</div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <p class="goal-status">$0 raised</p>
+        <button class="donate-button">Donate to this</button>
+      </div>
+
+      <div class="goal-container" data-goal-id="map" data-target="500">
+        <div class="goal-title">Who's the editor...?</div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <p class="goal-status">$0 raised</p>
+        <button class="donate-button">Donate to this</button>
+      </div>
+
+      <div class="goal-container" data-goal-id="stop-writing" data-target="100">
+        <div class="goal-title">WHERE IS THE SEQUEL?></div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <p class="goal-status">$0 raised</p>
+        <button class="donate-button">Donate to this</button>
+
+  <!-- NEW BAR 1 -->
+      <div class="goal-container" data-goal-id="sequel" data-target="400">
+        <div class="goal-title">WHERE IS THE SEQUEL?! ($400 Goal)</div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <p class="goal-status">$0 raised</p>
+        <button class="donate-button">Donate to this</button>
+      </div>
+
+      <!-- NEW BAR 2 -->
+      <div class="goal-container" data-goal-id="ankor" data-target="200">
+        <div class="goal-title">What's Ankor? ($200 Goal)</div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <p class="goal-status">$0 raised</p>
+        <button class="donate-button">Donate to this</button>
+    
+      </div>
+    </div>
+  </div>
+
+  <!-- Thank You Modal -->
+  <div class="thank-you-modal" id="thankYouModal">
+    <div class="thank-you-content">
+      <h2>Thank You!</h2>
+      <p>Your support means a lot.</p>
+      <button onclick="closeThankYou()">Close</button>
+    </div>
+  </div>
+
+  <!-- Stripe.js library -->
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <script>
+    const donationData = {
+      editor: 0,
+      map: 0,
+      "stop-writing": 0
+    };
+
+    const stripe = Stripe('pk_test_YOUR_PUBLIC_KEY_HERE'); // Replace this with your Stripe public key
+
+    document.querySelectorAll('.donate-button').forEach(button => {
+      button.addEventListener('click', async (e) => {
+        const container = button.parentElement;
+        const goalId = container.getAttribute('data-goal-id');
+
+        const amount = prompt('How much would you like to donate? (in USD)');
+        if (!amount || isNaN(amount) || amount <= 0) {
+          alert('Invalid donation amount.');
+          return;
+        }
+
+        // Send to server to create payment
+        const response = await fetch('/create-payment-intent', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ amount: amount * 100, goal: goalId })
+        });
+
+        const paymentIntent = await response.json();
+
+        const { error, paymentIntent: confirmedIntent } = await stripe.confirmCardPayment(paymentIntent.client_secret, {
+          payment_method: {
+            card: {
+              number: '4242424242424242',
+              exp_month: 12,
+              exp_year: 2025,
+              cvc: '123'
+            }
+          }
+        });
+
+        if (error) {
+          alert(error.message);
+        } else {
+          donationData[goalId] += parseFloat(amount);
+          updateProgress();
+          showThankYou();
+        }
+      });
+    });
+
+    function updateProgress() {
+      document.querySelectorAll('.goal-container').forEach(container => {
+        const goalId = container.getAttribute('data-goal-id');
+        const target = parseFloat(container.getAttribute('data-target'));
+        const raised = donationData[goalId];
+
+        const percent = Math.min(100, (raised / target) * 100);
+        container.querySelector('.progress').style.width = percent + '%';
+        container.querySelector('.goal-status').textContent = `$${raised.toFixed(2)} raised`;
+      });
+    }
+
+    function showThankYou() {
+      document.getElementById('thankYouModal').classList.add('active');
+    }
+
+    function closeThankYou() {
+      document.getElementById('thankYouModal').classList.remove('active');
+    }
+
+    updateProgress();
+  </script>
+</body>
+</html>
