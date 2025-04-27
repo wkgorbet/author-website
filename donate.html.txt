@@ -148,16 +148,17 @@
       </div>
 
       <div class="goal-container" data-goal-id="stop-writing" data-target="100">
-        <div class="goal-title">WHERE IS THE SEQUEL?></div>
+        <div class="goal-title">WHERE IS THE SEQUEL?!</div>
         <div class="progress-bar">
           <div class="progress"></div>
         </div>
         <p class="goal-status">$0 raised</p>
         <button class="donate-button">Donate to this</button>
+</div>
 
   <!-- NEW BAR 1 -->
       <div class="goal-container" data-goal-id="sequel" data-target="400">
-        <div class="goal-title">WHERE IS THE SEQUEL?! ($400 Goal)</div>
+        <div class="goal-title">Audiobook when?</div>
         <div class="progress-bar">
           <div class="progress"></div>
         </div>
@@ -167,7 +168,7 @@
 
       <!-- NEW BAR 2 -->
       <div class="goal-container" data-goal-id="ankor" data-target="200">
-        <div class="goal-title">What's Ankor? ($200 Goal)</div>
+        <div class="goal-title">What's Ankor?</div>
         <div class="progress-bar">
           <div class="progress"></div>
         </div>
