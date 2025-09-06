@@ -38,11 +38,11 @@
                     <div class="book">
                         <img src="EoDlogo.png" alt="Echoes of Destruction">
                         <h4><a href="echoes-of-destruction.html">Echoes of Destruction</a></h4>
-                        <p>DONE! Pre-order now for release on 7/1/2025</p>
+                        <p>Currently available for purchase; Released on 7/1/2025</p>
                     </div>
                     <div class="book">
-                        <img src="coming_soon.png" alt="A Vessel Reborn">
-                        <h4><a href="a-vessel-reborn.html">A Vessel Reborn</a></h4>
+                        <img src="placeholder.png" alt="A Vessel Reborn">
+                        <h4><a href="a-vessel-reborn.html">First Matter Book 2</a></h4>
                     </div>
                     <div class="book">
                         <img src="placeholder.png" alt="Book 3 Title">
@@ -57,7 +57,7 @@
                 <div class="books">
                     <div class="book">
                         <img src="placeholder.png" alt="Ankor Book 1">
-                        <h4><a href="tbd-book1.html">The Wind Cutter</a></h4>
+                        <h4><a href="tbd-book1.html">Ankor Book 1</a></h4>
                     </div>
                     <div class="book">
                         <img src="placeholder.png" alt="Ankor Book 2">
@@ -74,18 +74,23 @@
 
  
 
- <!-- Social Media Links -->
+<!-- Social Media Links -->
 <section id="social-media">
     <div class="container">
         <h2>Follow W.K.</h2>
-       <ul class="social-media">
-    <li><a href="https://www.instagram.com/wkgorbet" target="_blank"><i class="fab fa-instagram"></i></a></li>
-    <li><a href="https://www.x.com/wk_author" target="_blank"><i class="fab fa-x"></i></a></li>
-</ul>
-<!-- Add Donate Link here -->
+        <ul class="social-media">
+            <li><a href="https://www.instagram.com/wkgorbet" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.x.com/wk_author" target="_blank"><i class="fab fa-x"></i></a></li>
+        </ul>
+
+        <!-- Contact Line -->
+        <p class="contact-line">Contact: <a href="mailto:wkgorbet@gmail.com">wkgorbet@gmail.com</a></p>
+
+        <!-- Add Donate Link here -->
         <p><a href="donate.html" class="donate-link">Donate</a></p>
     </div>
 </section>
+
 
 
     <!-- Back to Top Button -->

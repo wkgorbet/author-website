@@ -236,6 +236,20 @@ footer {
     text-align: center;
     color: #f1faee;
 }
+.contact-line {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #f1faee; /* Matches other text color */
+}
+
+.contact-line a {
+    color: #e63946; /* Matches link color */
+    text-decoration: none;
+}
+
+.contact-line a:hover {
+    text-decoration: underline;
+}
 
 /* Back to Top Button */
 #back-to-top {
